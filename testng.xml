@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/Java/Idea Workspace/TheInternet_TestNG"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test">
+        <classes>
+            <class name="tests.Test01_ABTesting" />
+            <!--            <class name="tests.Test02_AddRemoveElements" />-->
+        </classes>
+    </test>    <!-- Test -->
+</suite><!-- Suite -->

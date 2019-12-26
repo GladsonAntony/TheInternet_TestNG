@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Test1_ABTesting
+public class Test01_ABTesting
 {
     @Test
     public void test1_ABTesting() throws Exception
