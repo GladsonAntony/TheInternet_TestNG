@@ -13,22 +13,19 @@
         <compiler.version>1.8</compiler.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.surefire.plugin.version>3.0.0-M4</maven.surefire.plugin.version>
+        <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-        <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+        <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
         <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
-        <maven.javadoc.plugin.version>3.1.1</maven.javadoc.plugin.version>
-		<testng.version>7.0.0</testng.version>
-		<selenium.version>3.141.59</selenium.version>
-		<allure.version>2.10.0</allure.version>
-		<aspectj.version>1.9.5</aspectj.version>
-        <webdrivermanager.version>3.7.1</webdrivermanager.version>
-        <aspectj.version>1.9.1</aspectj.version>
-        <apachepoi.version>4.1.1</apachepoi.version>
-        <slf4j.version>1.7.29</slf4j.version>
-        <htmlelements.version>1.19</htmlelements.version>
-        <ashot.version>1.5.4</ashot.version>
-        <seleniumshutterbag.version>0.9.3</seleniumshutterbag.version>
+        <maven.javadoc.plugin.version>3.3.1</maven.javadoc.plugin.version>
+        <testng.version>7.4.0</testng.version>
+        <selenium.version>4.0.0-rc-1</selenium.version>
+        <allure.version>2.15.0</allure.version>
+        <aspectj.version>1.9.8.M1</aspectj.version>
+        <webdrivermanager.version>5.0.3</webdrivermanager.version>
+        <apachepoi.version>5.0.0</apachepoi.version>
+        <slf4j.version>2.0.0-alpha5</slf4j.version>
+        <seleniumshutterbag.version>1.5</seleniumshutterbag.version>
     </properties>
 
     <dependencies>
@@ -145,30 +142,6 @@
         </dependency>
 
 
-        <!-- Monte-Video Recorder Dependency -->
-        <dependency>
-            <groupId>com.pojosontheweb</groupId>
-            <artifactId>monte-repack</artifactId>
-            <version>1.0</version>
-        </dependency>
-
-
-        <!-- YANDEX QATools Properties Dependency -->
-        <dependency>
-            <groupId>ru.yandex.qatools.properties</groupId>
-            <artifactId>properties-loader</artifactId>
-            <version>1.5</version>
-        </dependency>
-
-
-        <!-- AShot Dependency -->
-        <dependency>
-            <groupId>ru.yandex.qatools.ashot</groupId>
-            <artifactId>ashot</artifactId>
-            <version>${ashot.version}</version>
-        </dependency>
-
-
         <!-- Selenium Shutterbag Dependency -->
         <dependency>
             <groupId>com.assertthat</groupId>
@@ -193,19 +166,19 @@
         </dependency>
 
 
-        <!-- HTML Elements from QA Tools to setup Page Object Model -->
-        <dependency>
-            <groupId>ru.yandex.qatools.htmlelements</groupId>
-            <artifactId>htmlelements-java</artifactId>
-            <version>${htmlelements.version}</version>
-        </dependency>
-
-
         <!-- Joda Date-Time Dependency -->
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.7</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
 
 
@@ -221,14 +194,6 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>${apachepoi.version}</version>
-        </dependency>
-
-
-        <!-- Apache POI-OOXML SCHEMAS Dependency -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml-schemas</artifactId>
             <version>${apachepoi.version}</version>
         </dependency>
 
